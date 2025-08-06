@@ -17,3 +17,21 @@ This project is an **AI-powered photo editing tool** with two main features:
 ---
 
 ## 📂 Project Structure
+
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** React (HTML, CSS, JavaScript)
+- **Backend:** Node.js, Express
+- **AI Models:** Background removal & enhancement APIs/ML models
+
+---
+
+## 📌 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/abhivagadiya21/ai-photo-editor.git
+   cd ai-photo-editor
+
