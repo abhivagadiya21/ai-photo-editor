@@ -1,0 +1,164 @@
+.art-section {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.art-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.art-subtitle {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.style-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.style-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.style-button:hover {
+  background: #f0f0f0;
+}
+
+.style-button.active {
+  background: linear-gradient(to right, #d1b3ff, #b3d1ff);
+  border-color: #aaa;
+}
+
+.art-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .art-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  }
+}
+
+.art-gallery {
+  background: #f3e8ff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  height: 428px;
+}
+
+.large-img {
+  grid-column: span 2;
+  height: 338px;
+  object-fit: cover;
+  border-radius: 5px;
+  position: relative;
+  right: 70px;
+  top: 25px;
+}
+
+.small-img {
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.art-text {
+  /* max-width: 400px; */
+  text-align: left;
+  width: 43%;
+}
+
+.art-text-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-wrap: nowrap;
+  line-height: 2;
+}
+
+.art-description {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.generate-button {
+  background: rgb(137, 104, 242);
+  color: white;
+  padding: 19px 24px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  width: 32%;
+  outline: none;
+}
+button:focus
+{
+  outline: none;
+}
+
+.generate-button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .art-text {
+    width: 100%;
+  }
+  .generate-button{
+    width: 100%;
+  }
+  .number-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-to-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .art-text-title{
+    text-wrap: wrap;
+    font-size: 18px;
+    line-height: 24px;  
+  }
+  .large-img{
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    right: 70px;
+    top:5px ;
+  }
+  .art-gallery{
+    width: 72.4vw;
+    height: 300px;
+    margin-left: 30px;
+  }
+}

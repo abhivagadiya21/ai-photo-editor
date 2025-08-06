@@ -1,0 +1,107 @@
+
+
+.tips-container {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.tips-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 81%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  /* padding: 28px; */
+  /* width: 100%; */
+}
+
+@media (max-width: 768px) {
+  .tip-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .tip-image{
+        aspect-ratio: 1 / 1;
+
+  }
+  .tips-list{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .juf{
+    margin-left: 200px;
+  }
+  .tip-heading{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .tips-title{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2px;
+  }
+  .accordion-font2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 1000;
+  }
+}
+
+.tip-text {
+  padding: 24px;
+  flex: 1;
+}
+
+.tip-heading {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.tip-description {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.tip-image-container {
+  flex: 1;
+  /* max-height: 270px; */
+  overflow: hidden;
+  /* border-radius: 25px; */
+  height: 99%;
+
+  /* padding-right: 20px */
+}
+
+.tip-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

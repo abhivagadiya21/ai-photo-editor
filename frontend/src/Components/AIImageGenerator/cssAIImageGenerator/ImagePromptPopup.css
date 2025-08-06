@@ -1,0 +1,210 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #f2f4f5;
+  /* border-radius: 20px; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-main {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup-image {
+  width: 40%;
+  height: 90%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.popup-details {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 20%;
+  height: 95%;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.popup-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-text12 {
+  font-size: 0.95rem;
+  color:rgba(10, 10, 10, 0.5);
+  line-height: 1.5;
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 75.1%;
+ /* justify-content: center; */
+ align-items: center;
+ background-color: #ffffff;
+ width: 18%;
+ padding: 10px;
+ height: 22%;
+ overflow: hidden;
+}
+
+.use-btn,
+.download-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.use-btn {
+  background: #5c4dff;
+  color: white;
+}
+
+.download-btn {
+  background: #f0f0ff;
+  color: #5c4dff;
+}
+
+.use-btn:hover {
+  background: #4430ff;
+}
+
+.download-btn:hover {
+  background: #e0e0ff;
+}
+.ju-svg{
+    margin-top:5px ;
+}
+.popup-button-media{
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 820px) {
+  
+  .popup-text {
+ 
+  color: rgba(10, 10, 10, 0.5);
+  white-space: nowrap;        
+  overflow: hidden;           
+  text-overflow: ellipsis;   
+  padding: 0px;
+  margin-top: 5px;
+}
+.popup-details{
+  width: 390px;
+  height: 230px;
+  margin: auto;
+  margin-top: 50px;
+}
+.popup-image{
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  margin-top: 10px;
+  border: 5px solid #fff;
+}
+.popup-main{
+  flex-direction: row;
+  gap: 10px;
+}
+.popup-buttons{
+  display: none;
+}
+.popup-title12{
+  font-size: 18px;
+  font-weight: bold;
+}
+.popup-content{
+  padding: 0px;
+}
+.popup-button-media{
+  display: block;
+  display: flex;
+  gap: 10px;
+}
+.download-btn{
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.use-btn{
+  width:500px;
+  background-color: #ebeeff;
+  color: #3b2fd1;
+}
+.popup-close{
+  background-color: #ffffff;
+  color: black;
+  border-radius: 70%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5px; */
+}
+
+
+}
+
+
+.popup-sidebar{
+  width: 5%;
+}

@@ -1,0 +1,57 @@
+.why-section {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.why-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-card {
+  background-color: #f6edff;
+  border-radius: 10px;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  width: 22%;
+}
+
+.why-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.why-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.why-description {
+  color: #4b4b4b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .why-card{
+    width: 100%;
+  }
+}

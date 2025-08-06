@@ -1,0 +1,261 @@
+.accordion-container85 {
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.accordion-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.accordion-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #7e7f7f;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.accordion-subtitle a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.accordion-header85 {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 16px;
+  color: #1d1d1f;
+  border: 1px solid #f2f4f5;
+  border-bottom: none;
+}
+
+.accordion-arrow {
+  font-size: 1.2rem;
+}
+
+.accordion-answer {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: rgba(10, 10, 10, 0.5);
+  line-height: 23px;
+  margin-top: 12px;
+}
+
+.accordion-question {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 5px;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-up {
+  transform: rotate(0deg);
+}
+
+.rotate-down {
+  transform: rotate(90deg);
+}
+
+.enhancer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enhancer-box {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 36px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.enhancer-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.enhancer-subtitle {
+  font-size: 18px;
+  color: #7d7d7d;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.upload-button {
+  background: linear-gradient(to right, #00f0ff, #7fff69);
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding: 28px 40px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  width: 22%;
+}
+
+.upload-button:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 120px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #666;
+  margin: 0 8px;
+}
+
+.footer .divider {
+  margin: 0 4px;
+  color: #ccc;
+}
+
+.language-selector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  user-select: none;
+}
+
+.globe-icon {
+  margin-right: 4px;
+}
+
+.selected-language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.language-selector *,
+.language-dropdown li {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: -2100%;
+  right: 0%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  list-style: none;
+  padding: 0;
+  width: 240px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  display: none;
+  flex-direction: row;
+  border-radius: 25px;
+}
+
+.selected-language .lang-label:hover~.language-dropdown,
+.language-selector:hover .language-dropdown {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.language-dropdown li {
+  padding: 10px 12px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  column-gap: 100px;
+  justify-content: center;
+}
+
+.language-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 820px) {
+  .upload-button {
+    width: 70%;
+    text-wrap: nowrap;
+    font-size: 15px;
+  }
+
+  .accordion-container85 {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .footer-left {
+    display: none;
+  }
+
+  .footer-right {
+    display: flex;
+    position: relative;
+    right: 65%;
+    justify-content: center;
+  }
+  .footer{
+    justify-content: center;
+  }
+  .accordion-container85{
+    width: 130%;
+    margin-left: -40px;
+  }
+  .accordion-title{
+    font-size: 24px;
+    font-weight: bold;
+  }
+   
+}

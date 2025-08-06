@@ -1,0 +1,70 @@
+.ai-tools-section {
+  text-align: center;
+}
+
+.ai-tools-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.ai-tools-grid {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ai-tool-card-magic {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  height: 450px;
+}
+
+.ai-tool-card-magic:hover {
+  transform: translateY(-5px);
+}
+
+.ai-tool-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.ai-tool-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #111;
+}
+
+.ai-tool-card p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 16px 16px;
+}
+.img-magic{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.title-name-magic{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.description-magic{
+    color: hsl(240 4% 46% / 1);
+}
+@media (max-width: 768px) {
+.ai-tool-card p{
+  padding: 0px;
+}
+.ai-tools-grid{
+      flex-wrap: wrap;
+}
+}
+

@@ -1,0 +1,135 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */
+  justify-content: center;
+  align-items: start;
+  /* flex-direction: column; */
+}
+
+.margin1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container>div {
+  width: 322px;
+  border: 1px solid #D9D9D9;
+  cursor: pointer;
+  /* height: 108px; */
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: #FCFCFC;
+  text-align: start;
+  transition: all .3s ease;
+  border-radius: 16px;
+  margin: 9.7px;
+}
+
+.flex-container>div:hover {
+  background-color: white;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.24);
+}
+
+.title-list
+{
+  color: black;
+  font-size: 20px;
+  margin-left: 90px;
+  
+}
+
+.img-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.listimg {
+  width: 107px;
+  height: 108px;
+  object-fit: cover;
+}
+
+.text-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding-right: 50px;  */
+  font-size: 16px;
+  font-weight: 600;
+ 
+}
+
+@media (max-width: 770px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: DodgerBlue; */
+    justify-content: center;
+    align-items: start;
+    /* flex-direction: column; */
+  }
+
+  .margin1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-container>div {
+    width: 322px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    /* height: 108px; */
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background: #FCFCFC;
+    text-align: start;
+    transition: all .3s ease;
+    border-radius: 16px;
+    margin: 9.7px;
+  }
+.flex-container>div {
+  width: 430px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+  /* height: 108px; */
+}
+
+}
+@media (min-width: 770px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: DodgerBlue; */
+    justify-content: center;
+    align-items: start;
+    /* flex-direction: column; */
+  }
+
+  .margin1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-container>div {
+    width: 350px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    /* height: 108px; */
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background: #FCFCFC;
+    text-align: start;
+    transition: all .3s ease;
+    border-radius: 16px;
+    margin: 9.7px;
+  }
+}
