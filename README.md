@@ -18,7 +18,7 @@ This project is an **AI-powered photo editing tool** with two main features:
 
 ## 📂 Project Structure.
 
-├── frontend/ # React (or other framework) code for the user interface
+├── frontend/ # React (or other framework) code for the user interface<br>
 └── backend/ # Node.js/Express (or other backend) code for processing images
 
 
